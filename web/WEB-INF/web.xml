@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>SrvUsuarios</servlet-name>
+        <servlet-class>com.controllers.SrvUsuarios</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SrvDepartamentos</servlet-name>
+        <servlet-class>com.controllers.SrvDepartamentos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SrvEstablecimientos</servlet-name>
+        <servlet-class>com.controllers.SrvEstablecimientos</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SrvUsuarios</servlet-name>
+        <url-pattern>/SrvUsuarios</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SrvDepartamentos</servlet-name>
+        <url-pattern>/SrvDepartamentos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SrvEstablecimientos</servlet-name>
+        <url-pattern>/SrvEstablecimientos</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
